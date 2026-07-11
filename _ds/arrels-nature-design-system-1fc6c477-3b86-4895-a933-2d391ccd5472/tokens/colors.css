@@ -1,0 +1,107 @@
+/* ============================================================
+   Arrels — Color System
+   Vivid, living nature palette. Leaf green leads; sky, sun,
+   clay and bloom bring energy. Warm cream canvas, forest ink.
+   ============================================================ */
+
+:root {
+  /* --- Primary: Leaf green (the pulse of the brand) --- */
+  --green-50:  #EAF8EF;
+  --green-100: #CDEED9;
+  --green-200: #A3E0BB;
+  --green-300: #6FD096;
+  --green-400: #38BB6F;
+  --green-500: #1FA85C; /* primary */
+  --green-600: #17894B;
+  --green-700: #126A3A;
+  --green-800: #0E4E2B;
+  --green-900: #0B3A20;
+
+  /* --- Forest: deep green-neutral for ink & dark surfaces --- */
+  --forest-900: #10231A;
+  --forest-800: #16311F;
+  --forest-700: #1E4029;
+  --forest-600: #2C5237;
+
+  /* --- Sky: fresh water/air blue --- */
+  --sky-100: #D6EEF9;
+  --sky-300: #79C6EC;
+  --sky-500: #229FDC;
+  --sky-700: #157099;
+
+  /* --- Sun: ripe amber/gold --- */
+  --sun-100: #FCEFC6;
+  --sun-300: #F7D262;
+  --sun-500: #F2B417;
+  --sun-700: #C08908;
+
+  /* --- Clay: warm terracotta earth --- */
+  --clay-100: #FADFD1;
+  --clay-300: #F0A182;
+  --clay-500: #E2653B;
+  --clay-700: #B14624;
+
+  /* --- Bloom: berry magenta (rare, celebratory) --- */
+  --bloom-100: #FBD9E9;
+  --bloom-300: #F088BA;
+  --bloom-500: #E24D8F;
+  --bloom-700: #B32C67;
+
+  /* --- Moss: olive-lime, an earthy secondary green --- */
+  --moss-300: #C3D98A;
+  --moss-500: #8CB23C;
+  --moss-700: #5F7E24;
+
+  /* --- Warm neutrals: cream canvas → forest ink --- */
+  --cream-50:  #FBFAF3; /* canvas */
+  --cream-100: #F4F2E7;
+  --stone-200: #E7E4D6;
+  --stone-300: #D3CFBE;
+  --stone-400: #B0AB98;
+  --stone-500: #837F6E;
+  --stone-600: #5C5A4E;
+  --stone-700: #3D3C33;
+  --ink:       #1A2A20; /* near-black forest ink */
+  --white:     #FFFFFF;
+
+  /* ============================================================
+     Semantic aliases — reference these in components
+     ============================================================ */
+
+  /* Surfaces */
+  --surface-canvas:  var(--cream-50);
+  --surface-card:    var(--white);
+  --surface-sunken:  var(--cream-100);
+  --surface-inverse: var(--forest-900);
+  --surface-tint:    var(--green-50);
+
+  /* Text */
+  --text-strong:  var(--ink);
+  --text-body:    var(--stone-700);
+  --text-muted:   var(--stone-500);
+  --text-inverse: var(--cream-50);
+  --text-brand:   var(--green-700);
+
+  /* Borders */
+  --border:        var(--stone-200);
+  --border-strong: var(--stone-300);
+  --border-brand:  var(--green-300);
+
+  /* Accent / interactive */
+  --accent:         var(--green-500);
+  --accent-hover:   var(--green-600);
+  --accent-active:  var(--green-700);
+  --accent-soft:    var(--green-100);
+  --accent-contrast:var(--white);
+  --focus-ring:     var(--green-400);
+
+  /* Functional / status */
+  --success:      var(--green-500);
+  --success-soft: var(--green-50);
+  --warning:      var(--sun-500);
+  --warning-soft: var(--sun-100);
+  --danger:       var(--clay-500);
+  --danger-soft:  var(--clay-100);
+  --info:         var(--sky-500);
+  --info-soft:    var(--sky-100);
+}

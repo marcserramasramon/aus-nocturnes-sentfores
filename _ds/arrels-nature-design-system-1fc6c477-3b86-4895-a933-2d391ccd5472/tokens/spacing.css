@@ -1,0 +1,40 @@
+/* ============================================================
+   Arrels — Spacing & Layout
+   8px base rhythm with a 4px half-step. Organic, generous
+   whitespace — the brand breathes.
+   ============================================================ */
+
+:root {
+  --space-0:   0;
+  --space-1:   0.25rem;  /* 4  */
+  --space-2:   0.5rem;   /* 8  */
+  --space-3:   0.75rem;  /* 12 */
+  --space-4:   1rem;     /* 16 */
+  --space-5:   1.5rem;   /* 24 */
+  --space-6:   2rem;     /* 32 */
+  --space-7:   2.5rem;   /* 40 */
+  --space-8:   3rem;     /* 48 */
+  --space-9:   4rem;     /* 64 */
+  --space-10:  5rem;     /* 80 */
+  --space-11:  7rem;     /* 112 */
+  --space-12:  9rem;     /* 144 */
+
+  /* Container widths */
+  --container-sm:  40rem;   /* 640  — reading */
+  --container-md:  60rem;   /* 960  — content */
+  --container-lg:  75rem;   /* 1200 — page */
+  --container-xl:  87.5rem; /* 1400 — wide */
+
+  /* Section rhythm */
+  --section-pad-y: var(--space-11);
+  --gutter:        var(--space-5);
+
+  /* Breakpoints (reference values) */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* Touch targets */
+  --tap-min: 44px;
+}
