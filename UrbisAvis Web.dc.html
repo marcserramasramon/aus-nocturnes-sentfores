@@ -202,6 +202,7 @@
                 <div style="font-style:italic;font-size:13.5px;color:var(--green-300)">{{ s.sci }}</div>
               </div>
               <p style="margin:0;font-size:14px;line-height:1.55;color:rgba(244,242,231,0.75);flex:1">{{ s.text }}</p>
+              <div style="font-family:var(--font-mono);font-size:11.5px;color:var(--sun-300);border-top:1px solid rgba(255,255,255,0.08);padding-top:10px">{{ s.data }}</div>
               <a href="{{ s.href }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:7px;text-decoration:none;color:var(--green-300);font-size:13.5px;font-weight:600">
                 <svg width="15" height="15"><use href="#ic-headphones"/></svg> Escolta el seu cant a xeno-canto
               </a>
@@ -328,6 +329,7 @@ class Component extends DCLogic {
   componentDidMount() {
     const perches = [
       '[data-owl-perch="hero-badge"]',
+      '[data-owl-perch="logo"]',
       '[data-owl-perch="hero-h1"]',
       '[data-owl-perch="pillar-tech"]',
       '[data-owl-perch="species-title"]',
@@ -364,16 +366,16 @@ class Component extends DCLogic {
       toggleLights: this.toggleLights,
       stars: this._stars,
       species: [
-        { name: 'Xot', sci: 'Otus scops', photo: 'images/owl-xot.webp',
+        { name: 'Xot', sci: 'Otus scops', photo: 'images/owl-xot.webp', data: 'Diàmetre d\u2019entrada: 6 cm',
           text: "El més petit i l'únic migrador. Passa l'hivern a l'Àfrica i torna a la primavera. El seu xiulet monòton i compassat és la banda sonora indiscutible de les nostres nits d'estiu.",
           href: 'https://xeno-canto.org/species/Otus-scops' },
-        { name: 'Mussol comú', sci: 'Athene noctua', photo: 'images/owl-mussol.webp',
+        { name: 'Mussol comú', sci: 'Athene noctua', photo: 'images/owl-mussol.webp', data: 'Diàmetre d\u2019entrada: 7 cm',
           text: 'Menut, d\u2019ulls grocs i caràcter valent. És el gran bioindicador dels camps i oliverars. Molt lligat a l\u2019activitat humana, sovint el veuràs dret sobre els pals de la llum o les fites al capvespre.',
           href: 'https://xeno-canto.org/species/Athene-noctua' },
-        { name: 'Gamarús', sci: 'Strix aluco', photo: 'images/owl-gamarus.webp',
+        { name: 'Gamarús', sci: 'Strix aluco', photo: 'images/owl-gamarus.webp', data: 'Diàmetre d\u2019entrada: 12-15 cm',
           text: "El senyor dels boscos de ribera i zones arbrades. És un caçador forestal pur, molt fidel al seu territori. El seu udol és el clàssic 'uuh' misteriós que fa ressonar la nit.",
           href: 'https://xeno-canto.org/species/Strix-aluco' },
-        { name: 'Òliba', sci: 'Tyto alba', photo: 'images/owl-oliba.webp',
+        { name: 'Òliba', sci: 'Tyto alba', photo: 'images/owl-oliba.webp', data: 'Entrada específica per a òliba (rectangular / gran)',
           text: 'Amb la seva silueta blanca i el seu vol fantasmal i absolutament insonor, és l\u2019esperit dels masos vells. Avui es troba en greu retrocés i és extremadament vulnerable a les alteracions del seu entorn.',
           href: 'https://xeno-canto.org/species/Tyto-alba' },
       ],
